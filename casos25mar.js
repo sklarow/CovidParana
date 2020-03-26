@@ -1,11 +1,139 @@
 var dadosMunicipios = [
   {
+    "municipio": "Curitiba",
+    "lat": -25.4195,
+    "lon": -49.2646,
+    "confirmados": 60,
+    "descartados": 205,
+    "investigados": 328
+  },
+  {
+    "municipio": "Cianorte",
+    "lat": -23.6599,
+    "lon": -52.6054,
+    "confirmados": 6,
+    "descartados": 15,
+    "investigados": 11
+  },
+  {
+    "municipio": "Foz do Iguaçu",
+    "lat": -25.5427,
+    "lon": -54.5827,
+    "confirmados": 5,
+    "descartados": 15,
+    "investigados": 118
+  },
+  {
+    "municipio": "Pinhais",
+    "lat": -25.4429,
+    "lon": -49.1927,
+    "confirmados": 3,
+    "descartados": 9,
+    "investigados": 27
+  },
+  {
+    "municipio": "Ponta Grossa",
+    "lat": -25.0916,
+    "lon": -50.1668,
+    "confirmados": 3,
+    "descartados": 29,
+    "investigados": 46
+  },
+  {
+    "municipio": "Londrina",
+    "lat": -23.304,
+    "lon": -51.1691,
+    "confirmados": 3,
+    "descartados": 20,
+    "investigados": 516
+  },
+  {
+    "municipio": "Colombo",
+    "lat": -25.2925,
+    "lon": -49.2262,
+    "confirmados": 2,
+    "descartados": 6,
+    "investigados": 48
+  },
+  {
+    "municipio": "Cascavel",
+    "lat": -24.9573,
+    "lon": -53.459,
+    "confirmados": 2,
+    "descartados": 31,
+    "investigados": 142
+  },
+  {
+    "municipio": "Maringá",
+    "lat": -23.4205,
+    "lon": -51.9333,
+    "confirmados": 2,
+    "descartados": 20,
+    "investigados": 90
+  },
+  {
+    "municipio": "Campo Largo",
+    "lat": -25.4525,
+    "lon": -49.529,
+    "confirmados": 1,
+    "descartados": 12,
+    "investigados": 9
+  },
+  {
+    "municipio": "Pato Branco",
+    "lat": -26.2292,
+    "lon": -52.6706,
+    "confirmados": 1,
+    "descartados": 3,
+    "investigados": 22
+  },
+  {
+    "municipio": "Campo Mourão",
+    "lat": -24.0463,
+    "lon": -52.378,
+    "confirmados": 1,
+    "descartados": 0,
+    "investigados": 8
+  },
+  {
+    "municipio": "Paranavaí",
+    "lat": -23.0816,
+    "lon": -52.4617,
+    "confirmados": 1,
+    "descartados": 1,
+    "investigados": 35
+  },
+  {
+    "municipio": "Faxinal",
+    "lat": -24.0077,
+    "lon": -51.3227,
+    "confirmados": 1,
+    "descartados": 2,
+    "investigados": 1
+  },
+  {
+    "municipio": "Guaíra",
+    "lat": -24.085,
+    "lon": -54.2573,
+    "confirmados": 1,
+    "descartados": 1,
+    "investigados": 18
+  },
+  {
+    "municipio": "Telêmaco Borba",
+    "lat": -24.3245,
+    "lon": -50.6176,
+    "confirmados": 1,
+    "descartados": 2,
+    "investigados": 84
+  },
+  {
     "municipio": "Guaratuba",
     "lat": -25.8817,
     "lon": -48.5752,
     "confirmados": 0,
-    "descartados": 2,
-    "investigados": 7
+    "descartados": 1,
+    "investigados": 8
   },
   {
     "municipio": "Matinhos",
@@ -60,8 +188,8 @@ var dadosMunicipios = [
     "lat": -25.5859,
     "lon": -49.4047,
     "confirmados": 0,
-    "descartados": 11,
-    "investigados": 36
+    "descartados": 8,
+    "investigados": 39
   },
   {
     "municipio": "Balsa Nova",
@@ -84,8 +212,8 @@ var dadosMunicipios = [
     "lat": -25.3044,
     "lon": -49.0551,
     "confirmados": 0,
-    "descartados": 1,
-    "investigados": 57
+    "descartados": 0,
+    "investigados": 58
   },
   {
     "municipio": "Campo do Tenente",
@@ -94,14 +222,6 @@ var dadosMunicipios = [
     "confirmados": 0,
     "descartados": 2,
     "investigados": 0
-  },
-  {
-    "municipio": "Campo Largo",
-    "lat": -25.4525,
-    "lon": -49.529,
-    "confirmados": 1,
-    "descartados": 12,
-    "investigados": 9
   },
   {
     "municipio": "Campo Magro",
@@ -120,14 +240,6 @@ var dadosMunicipios = [
     "investigados": 1
   },
   {
-    "municipio": "Colombo",
-    "lat": -25.2925,
-    "lon": -49.2262,
-    "confirmados": 2,
-    "descartados": 9,
-    "investigados": 45
-  },
-  {
     "municipio": "Contenda",
     "lat": -25.6788,
     "lon": -49.535,
@@ -136,20 +248,12 @@ var dadosMunicipios = [
     "investigados": 7
   },
   {
-    "municipio": "Curitiba",
-    "lat": -25.4195,
-    "lon": -49.2646,
-    "confirmados": 66,
-    "descartados": 245,
-    "investigados": 316
-  },
-  {
     "municipio": "Fazenda Rio Grande",
     "lat": -25.6624,
     "lon": -49.3073,
     "confirmados": 0,
-    "descartados": 3,
-    "investigados": 100
+    "descartados": 2,
+    "investigados": 101
   },
   {
     "municipio": "Itaperuçu",
@@ -184,60 +288,52 @@ var dadosMunicipios = [
     "investigados": 2
   },
   {
-    "municipio": "Pinhais",
-    "lat": -25.4429,
-    "lon": -49.1927,
-    "confirmados": 3,
-    "descartados": 9,
-    "investigados": 27
-  },
-  {
     "municipio": "Piraquara",
     "lat": -25.4422,
     "lon": -49.0624,
     "confirmados": 0,
-    "descartados": 12,
-    "investigados": 75
+    "descartados": 11,
+    "investigados": 76
   },
   {
     "municipio": "Quatro Barras",
     "lat": -25.3673,
     "lon": -49.0763,
     "confirmados": 0,
-    "descartados": 4,
-    "investigados": 22
+    "descartados": 3,
+    "investigados": 23
   },
   {
     "municipio": "Quitandinha",
     "lat": -25.8734,
     "lon": -49.4973,
     "confirmados": 0,
-    "descartados": 1,
-    "investigados": 2
+    "descartados": 0,
+    "investigados": 3
   },
   {
     "municipio": "Rio Branco do Sul",
     "lat": -25.1892,
     "lon": -49.3115,
     "confirmados": 0,
-    "descartados": 1,
-    "investigados": 6
+    "descartados": 0,
+    "investigados": 7
   },
   {
     "municipio": "Rio Negro",
     "lat": -26.095,
     "lon": -49.7982,
-    "confirmados": 1,
-    "descartados": 4,
-    "investigados": 11
+    "confirmados": 0,
+    "descartados": 2,
+    "investigados": 13
   },
   {
     "municipio": "São José dos Pinhais",
     "lat": -25.5313,
     "lon": -49.2031,
     "confirmados": 0,
-    "descartados": 8,
-    "investigados": 31
+    "descartados": 7,
+    "investigados": 32
   },
   {
     "municipio": "Tijucas do Sul",
@@ -288,14 +384,6 @@ var dadosMunicipios = [
     "investigados": 1
   },
   {
-    "municipio": "Ponta Grossa",
-    "lat": -25.0916,
-    "lon": -50.1668,
-    "confirmados": 3,
-    "descartados": 37,
-    "investigados": 36
-  },
-  {
     "municipio": "Porto Amazonas",
     "lat": -25.54,
     "lon": -49.8946,
@@ -324,8 +412,8 @@ var dadosMunicipios = [
     "lat": -25.2285,
     "lon": -50.5989,
     "confirmados": 0,
-    "descartados": 2,
-    "investigados": 28
+    "descartados": 1,
+    "investigados": 29
   },
   {
     "municipio": "Inácio Martins",
@@ -340,8 +428,8 @@ var dadosMunicipios = [
     "lat": -25.4697,
     "lon": -50.6493,
     "confirmados": 0,
-    "descartados": 5,
-    "investigados": 39
+    "descartados": 3,
+    "investigados": 41
   },
   {
     "municipio": "Mallet",
@@ -356,8 +444,8 @@ var dadosMunicipios = [
     "lat": -25.6232,
     "lon": -50.6877,
     "confirmados": 0,
-    "descartados": 1,
-    "investigados": 4
+    "descartados": 0,
+    "investigados": 5
   },
   {
     "municipio": "Rio Azul",
@@ -372,16 +460,16 @@ var dadosMunicipios = [
     "lat": -25.3701,
     "lon": -50.4571,
     "confirmados": 0,
-    "descartados": 1,
-    "investigados": 1
+    "descartados": 0,
+    "investigados": 2
   },
   {
     "municipio": "Guarapuava",
     "lat": -25.3902,
     "lon": -51.4623,
     "confirmados": 0,
-    "descartados": 6,
-    "investigados": 20
+    "descartados": 2,
+    "investigados": 24
   },
   {
     "municipio": "Marquinho",
@@ -404,8 +492,8 @@ var dadosMunicipios = [
     "lat": -25.6944,
     "lon": -51.6536,
     "confirmados": 0,
-    "descartados": 1,
-    "investigados": 1
+    "descartados": 0,
+    "investigados": 2
   },
   {
     "municipio": "Pitanga",
@@ -420,8 +508,8 @@ var dadosMunicipios = [
     "lat": -25.2111,
     "lon": -50.9754,
     "confirmados": 0,
-    "descartados": 1,
-    "investigados": 1
+    "descartados": 0,
+    "investigados": 2
   },
   {
     "municipio": "Turvo",
@@ -436,8 +524,8 @@ var dadosMunicipios = [
     "lat": -26.0166,
     "lon": -51.343,
     "confirmados": 0,
-    "descartados": 1,
-    "investigados": 4
+    "descartados": 0,
+    "investigados": 5
   },
   {
     "municipio": "General Carneiro",
@@ -460,8 +548,8 @@ var dadosMunicipios = [
     "lat": -26.2273,
     "lon": -51.0873,
     "confirmados": 0,
-    "descartados": 2,
-    "investigados": 12
+    "descartados": 1,
+    "investigados": 13
   },
   {
     "municipio": "Bom Sucesso do Sul",
@@ -536,14 +624,6 @@ var dadosMunicipios = [
     "investigados": 3
   },
   {
-    "municipio": "Pato Branco",
-    "lat": -26.2292,
-    "lon": -52.6706,
-    "confirmados": 2,
-    "descartados": 5,
-    "investigados": 20
-  },
-  {
     "municipio": "São João",
     "lat": -25.8214,
     "lon": -52.7252,
@@ -564,8 +644,8 @@ var dadosMunicipios = [
     "lat": -25.9168,
     "lon": -53.4686,
     "confirmados": 0,
-    "descartados": 2,
-    "investigados": 0
+    "descartados": 1,
+    "investigados": 1
   },
   {
     "municipio": "Barracão",
@@ -580,8 +660,8 @@ var dadosMunicipios = [
     "lat": -25.6691,
     "lon": -53.8055,
     "confirmados": 0,
-    "descartados": 1,
-    "investigados": 1
+    "descartados": 0,
+    "investigados": 2
   },
   {
     "municipio": "Dois Vizinhos",
@@ -596,8 +676,8 @@ var dadosMunicipios = [
     "lat": -26.0817,
     "lon": -53.0535,
     "confirmados": 0,
-    "descartados": 1,
-    "investigados": 12
+    "descartados": 0,
+    "investigados": 13
   },
   {
     "municipio": "Marmeleiro",
@@ -660,8 +740,8 @@ var dadosMunicipios = [
     "lat": -26.1588,
     "lon": -52.9703,
     "confirmados": 0,
-    "descartados": 1,
-    "investigados": 2
+    "descartados": 0,
+    "investigados": 3
   },
   {
     "municipio": "São Jorge D'Oeste",
@@ -680,14 +760,6 @@ var dadosMunicipios = [
     "investigados": 1
   },
   {
-    "municipio": "Foz do Iguaçu",
-    "lat": -25.5427,
-    "lon": -54.5827,
-    "confirmados": 5,
-    "descartados": 16,
-    "investigados": 118
-  },
-  {
     "municipio": "Matelândia",
     "lat": -25.2496,
     "lon": -53.9935,
@@ -700,8 +772,8 @@ var dadosMunicipios = [
     "lat": -25.2977,
     "lon": -54.0943,
     "confirmados": 0,
-    "descartados": 3,
-    "investigados": 12
+    "descartados": 0,
+    "investigados": 15
   },
   {
     "municipio": "Ramilândia",
@@ -757,7 +829,7 @@ var dadosMunicipios = [
     "lon": -53.3207,
     "confirmados": 0,
     "descartados": 0,
-    "investigados": 22
+    "investigados": 21
   },
   {
     "municipio": "Capitão Leônidas Marques",
@@ -766,14 +838,6 @@ var dadosMunicipios = [
     "confirmados": 0,
     "descartados": 0,
     "investigados": 1
-  },
-  {
-    "municipio": "Cascavel",
-    "lat": -24.9573,
-    "lon": -53.459,
-    "confirmados": 2,
-    "descartados": 35,
-    "investigados": 138
   },
   {
     "municipio": "Corbélia",
@@ -844,8 +908,8 @@ var dadosMunicipios = [
     "lat": -24.5289,
     "lon": -53.2575,
     "confirmados": 0,
-    "descartados": 1,
-    "investigados": 24
+    "descartados": 0,
+    "investigados": 25
   },
   {
     "municipio": "Quedas do Iguaçu",
@@ -880,14 +944,6 @@ var dadosMunicipios = [
     "investigados": 1
   },
   {
-    "municipio": "Campo Mourão",
-    "lat": -24.0463,
-    "lon": -52.378,
-    "confirmados": 1,
-    "descartados": 4,
-    "investigados": 3
-  },
-  {
     "municipio": "Goioerê",
     "lat": -24.1835,
     "lon": -53.0248,
@@ -916,16 +972,16 @@ var dadosMunicipios = [
     "lat": -24.0509,
     "lon": -53.0102,
     "confirmados": 0,
-    "descartados": 1,
-    "investigados": 0
+    "descartados": 0,
+    "investigados": 2
   },
   {
     "municipio": "Ubiratã",
     "lat": -24.5393,
     "lon": -52.9865,
     "confirmados": 0,
-    "descartados": 2,
-    "investigados": 2
+    "descartados": 0,
+    "investigados": 4
   },
   {
     "municipio": "Alto Paraíso",
@@ -989,23 +1045,15 @@ var dadosMunicipios = [
     "lon": -53.3201,
     "confirmados": 0,
     "descartados": 2,
-    "investigados": 55
-  },
-  {
-    "municipio": "Cianorte",
-    "lat": -23.6599,
-    "lon": -52.6054,
-    "confirmados": 6,
-    "descartados": 18,
-    "investigados": 8
+    "investigados": 56
   },
   {
     "municipio": "Japurá",
     "lat": -23.4693,
     "lon": -52.5557,
     "confirmados": 0,
-    "descartados": 1,
-    "investigados": 1
+    "descartados": 0,
+    "investigados": 2
   },
   {
     "municipio": "Jussara",
@@ -1068,8 +1116,8 @@ var dadosMunicipios = [
     "lat": -22.7639,
     "lon": -52.9868,
     "confirmados": 0,
-    "descartados": 1,
-    "investigados": 3
+    "descartados": 0,
+    "investigados": 4
   },
   {
     "municipio": "Paraíso do Norte",
@@ -1078,14 +1126,6 @@ var dadosMunicipios = [
     "confirmados": 0,
     "descartados": 0,
     "investigados": 3
-  },
-  {
-    "municipio": "Paranavaí",
-    "lat": -23.0816,
-    "lon": -52.4617,
-    "confirmados": 1,
-    "descartados": 1,
-    "investigados": 35
   },
   {
     "municipio": "Porto Rico",
@@ -1100,8 +1140,8 @@ var dadosMunicipios = [
     "lat": -23.0838,
     "lon": -53.483,
     "confirmados": 0,
-    "descartados": 1,
-    "investigados": 1
+    "descartados": 0,
+    "investigados": 2
   },
   {
     "municipio": "Santa Isabel do Ivaí",
@@ -1188,8 +1228,8 @@ var dadosMunicipios = [
     "lat": -23.5446,
     "lon": -51.671,
     "confirmados": 0,
-    "descartados": 1,
-    "investigados": 4
+    "descartados": 0,
+    "investigados": 5
   },
   {
     "municipio": "Marialva",
@@ -1198,14 +1238,6 @@ var dadosMunicipios = [
     "confirmados": 0,
     "descartados": 0,
     "investigados": 1
-  },
-  {
-    "municipio": "Maringá",
-    "lat": -23.4205,
-    "lon": -51.9333,
-    "confirmados": 3,
-    "descartados": 23,
-    "investigados": 87
   },
   {
     "municipio": "Nova Esperança",
@@ -1260,8 +1292,8 @@ var dadosMunicipios = [
     "lat": -23.55,
     "lon": -51.4635,
     "confirmados": 0,
-    "descartados": 2,
-    "investigados": 3
+    "descartados": 1,
+    "investigados": 4
   },
   {
     "municipio": "Arapongas",
@@ -1270,14 +1302,6 @@ var dadosMunicipios = [
     "confirmados": 0,
     "descartados": 2,
     "investigados": 7
-  },
-  {
-    "municipio": "Faxinal",
-    "lat": -24.0077,
-    "lon": -51.3227,
-    "confirmados": 1,
-    "descartados": 2,
-    "investigados": 1
   },
   {
     "municipio": "Grandes Rios",
@@ -1292,8 +1316,8 @@ var dadosMunicipios = [
     "lat": -23.6011,
     "lon": -51.6448,
     "confirmados": 0,
-    "descartados": 2,
-    "investigados": 1
+    "descartados": 1,
+    "investigados": 2
   },
   {
     "municipio": "Kaloré",
@@ -1357,7 +1381,7 @@ var dadosMunicipios = [
     "lon": -51.6504,
     "confirmados": 0,
     "descartados": 0,
-    "investigados": 2
+    "investigados": 1
   },
   {
     "municipio": "Ibiporã",
@@ -1382,14 +1406,6 @@ var dadosMunicipios = [
     "confirmados": 0,
     "descartados": 0,
     "investigados": 2
-  },
-  {
-    "municipio": "Londrina",
-    "lat": -23.304,
-    "lon": -51.1691,
-    "confirmados": 3,
-    "descartados": 27,
-    "investigados": 511
   },
   {
     "municipio": "Lupionópolis",
@@ -1436,8 +1452,8 @@ var dadosMunicipios = [
     "lat": -23.0571,
     "lon": -51.0399,
     "confirmados": 0,
-    "descartados": 1,
-    "investigados": 14
+    "descartados": 0,
+    "investigados": 15
   },
   {
     "municipio": "Andirá",
@@ -1452,8 +1468,8 @@ var dadosMunicipios = [
     "lat": -23.1078,
     "lon": -50.3704,
     "confirmados": 0,
-    "descartados": 2,
-    "investigados": 1
+    "descartados": 1,
+    "investigados": 2
   },
   {
     "municipio": "Congonhinhas",
@@ -1532,8 +1548,8 @@ var dadosMunicipios = [
     "lat": -23.0361,
     "lon": -50.8317,
     "confirmados": 0,
-    "descartados": 1,
-    "investigados": 1
+    "descartados": 0,
+    "investigados": 2
   },
   {
     "municipio": "Uraí",
@@ -1556,8 +1572,8 @@ var dadosMunicipios = [
     "lat": -23.623,
     "lon": -50.1707,
     "confirmados": 0,
-    "descartados": 1,
-    "investigados": 0
+    "descartados": 0,
+    "investigados": 1
   },
   {
     "municipio": "Guapirama",
@@ -1572,8 +1588,8 @@ var dadosMunicipios = [
     "lat": -23.8478,
     "lon": -50.1932,
     "confirmados": 0,
-    "descartados": 2,
-    "investigados": 2
+    "descartados": 0,
+    "investigados": 3
   },
   {
     "municipio": "Jacarezinho",
@@ -1588,8 +1604,8 @@ var dadosMunicipios = [
     "lat": -23.8142,
     "lon": -50.1422,
     "confirmados": 0,
-    "descartados": 2,
-    "investigados": 2
+    "descartados": 0,
+    "investigados": 4
   },
   {
     "municipio": "Quatiguá",
@@ -1604,8 +1620,8 @@ var dadosMunicipios = [
     "lat": -23.2959,
     "lon": -50.0815,
     "confirmados": 0,
-    "descartados": 1,
-    "investigados": 4
+    "descartados": 0,
+    "investigados": 5
   },
   {
     "municipio": "Tomazina",
@@ -1640,14 +1656,6 @@ var dadosMunicipios = [
     "investigados": 5
   },
   {
-    "municipio": "Guaíra",
-    "lat": -24.085,
-    "lon": -54.2573,
-    "confirmados": 1,
-    "descartados": 1,
-    "investigados": 18
-  },
-  {
     "municipio": "Marechal Cândido Rondon",
     "lat": -24.557,
     "lon": -54.0571,
@@ -1676,8 +1684,8 @@ var dadosMunicipios = [
     "lat": -24.2868,
     "lon": -53.8404,
     "confirmados": 0,
-    "descartados": 5,
-    "investigados": 2
+    "descartados": 4,
+    "investigados": 3
   },
   {
     "municipio": "Santa Helena",
@@ -1742,14 +1750,6 @@ var dadosMunicipios = [
     "confirmados": 0,
     "descartados": 0,
     "investigados": 1
-  },
-  {
-    "municipio": "Telêmaco Borba",
-    "lat": -24.3245,
-    "lon": -50.6176,
-    "confirmados": 1,
-    "descartados": 4,
-    "investigados": 81
   },
   {
     "municipio": "Tibagi",
