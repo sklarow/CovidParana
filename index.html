@@ -9,8 +9,37 @@
         <script src='pr-cities.js'></script>
         <script src='casos.js'></script>
         <style>
-        body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
+            body { margin:0; padding:0; }
+            #map { position:absolute; top:0; bottom:0; width:100%; }
+            .info {
+                padding: 6px 8px;
+                font: 14px/16px Arial, Helvetica, sans-serif;
+                background: white;
+                background: rgba(255,255,255,0.8);
+                box-shadow: 0 0 15px rgba(0,0,0,0.2);
+                border-radius: 5px;
+            }
+            .info h4 {
+                margin: 0 0 5px;
+                color: #777;
+            }
+            .dot {
+                height: 12px;
+                width: 12px;                
+                border-radius: 50%;
+                display: inline-block;
+            }
+            .red {
+                background-color: red;
+            }
+            .yellow {
+                background-color: yellow;
+            }
+            .black {
+                background-color: black;
+            }
+        
+
         </style>
     </head>
     <body>
@@ -31,7 +60,7 @@
 
             L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=' + mapboxAccessToken, {
                 id: 'mapbox/light-v9',
-                attribution: '© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> <strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong><strong><a href="http://www.saude.pr.gov.br/modules/conteudo/conteudo.php?conteudo=3507 target="_blank"> | Dados obtidos na Secretaria da Saúde do Paraná</a></strong> | Dados de 26/Mar',
+                attribution: '© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> <strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong><strong><a href="http://www.saude.pr.gov.br/modules/conteudo/conteudo.php?conteudo=3507 target="_blank"> | Dados obtidos na Secretaria da Saúde do Paraná</a></strong> | Dados de 30/Mar',
                 tileSize: 512,
                 zoomOffset: -1
             }).addTo(map);
@@ -40,12 +69,26 @@
                 style: geosonStyle
             }).addTo(map);
 
+            var info = L.control();
+            info.onAdd = function (map) {
+                this._div = L.DomUtil.create('div', 'info');
+                this.update();
+                return this._div;
+            };
+
+            info.update = function (props) {
+                this._div.innerHTML = '<h4>Casos de COVID-19 no Paraná</h4><br><span class="black dot"></span> Óbitos<br><span class="red dot"></span> Confirmados<br><span class="yellow dot"></span> Em investigação<br><br><h4>Passe o mouse sobre os pontos para + infos.</h4>';
+            };
+
+            info.addTo(map);
+
             for ( var i in dadosMunicipios) {
                 var municipio = dadosMunicipios[i].municipio;
                 var lat = dadosMunicipios[i].lat;
                 var lon = dadosMunicipios[i].lon;
                 var confirmados = dadosMunicipios[i].confirmados;
                 var investigados = dadosMunicipios[i].investigados;
+                var obitos = dadosMunicipios[i].obitos;
 
                 if (investigados > 0){
                     var pontoSuspeitos = L.circle([lat, lon], {
@@ -53,7 +96,7 @@
                         fillColor: 'yellow',
                         fillOpacity: 0.5,
                         radius: investigados * 50
-                    }).bindTooltip("<b>" + municipio + "</b><br>Confirmados: " + confirmados + "</b><br>Em investigação: " + investigados).addTo(map);
+                    }).bindTooltip("<b>" + municipio + "</b><br>Óbitos: " + obitos  + "</b><br>Confirmados: " + confirmados + "</b><br>Em investigação: " + investigados).addTo(map);
                 }
 
                 if (confirmados > 0){
@@ -62,8 +105,18 @@
                         fillColor: 'red',
                         fillOpacity: 1,
                         radius: confirmados * 50
-                    }).bindTooltip("<b>" + municipio + "</b><br>Confirmados: " + confirmados + "</b><br>Em investigação: " + investigados).addTo(map); 
+                    }).bindTooltip("<b>" + municipio + "</b><br>Óbitos: " + obitos + "</b><br>Confirmados: " + confirmados + "</b><br>Em investigação: " + investigados).addTo(map); 
 
+
+                }
+               
+                if (obitos > 0){
+                    var pontoObitos = L.circle([lat, lon], {
+                        color: 'black',
+                        fillColor: 'black',
+                        fillOpacity: 1,
+                        radius: obitos * 50
+                    }).bindTooltip("<b>" + municipio + "</b><br>Óbitos: " + obitos  + "</b><br>Confirmados: " + confirmados + "</b><br>Em investigação: " + investigados).addTo(map);
                 }
 	        }     
         </script>
